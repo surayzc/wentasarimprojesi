@@ -1,0 +1,270 @@
+<html>
+<head><title> Kitap Dünyası </title>
+<style type="text/css">
+
+ h1, h2, h3 {
+      color: darkred; 
+    }
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495e;
+}
+
+li {
+    display:inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:#f39c12; 
+}
+
+ul li ul {
+    background-color:#2c3e50;
+    display:none;
+    position:absolute;
+    width:100px
+}
+
+ul li:hover ul{
+    display:block;
+}
+li ul li {
+    display:block; 
+}
+
+
+
+.kitaplar-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+	display: flex
+    }
+.kitap-karti {
+      width: 150px;
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .kitap-karti img {
+      width: 100%;
+      height: auto;
+    }
+
+    .kitap-karti h4 {
+      margin-top: 10px;
+      font-size: 16px;
+      color: darkred;
+    }
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="#index">Ana sayfa</a></li>
+
+  <li><a href="#Kitap">Kitap</a></li>
+
+  <li><a href="#Eğitim kitapları">Eğitim kitapları</a>
+   <ul>
+
+      <li><a href="#Üniversiteye hazırlık">Üniversiteye hazırlık</a></li>
+
+      <li><a href="#Liseye geçiş sınavları">Liseye geçiş sınavları</a></li> 
+
+      <li><a href="#KPSS">KPSS</a></li>      
+    </ul>
+
+    </li>
+
+  <li><a href="#Çocuk kitapları">Çocuk kitapları</a>
+<ul>
+
+      <li><a href="#Boyama kitapları">Boyama kitapları</a></li>
+
+      <li><a href="#Çocuk fantastik">Çocuk fantastik</a></li> 
+
+      <li><a href="#Çocuk gelişim ">Çocuk gelişim</a></li>      
+    </ul>
+
+
+  <li><a href="#iletisim">İletişim</a></li>
+</ul>
+
+
+
+
+
+ <h2><b>Arama Yap</b></h2>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Bir şeyler ara...">
+    <button onclick="aramaYap()">Ara</button>
+  </div>
+
+  <script>
+    function aramaYap() {
+      const aramaMetni = document.getElementById("searchInput").value;
+      alert("Aranan: " + aramaMetni);
+    }
+  </script>
+
+
+
+<h3> Kitaplar</h3>
+Edebiyat <a href ="edebiyat.html"> Tıklayınız.</a> <p>
+Çocuk <a href ="çocuk.txt.html"> Tıklayınız.</a> <p>
+
+
+
+<h4><b>Öne Çıkanlar</b></h4>
+
+<div class="kitaplar-container">
+    <div class="kitap-karti">
+      <img src="resimler/resim3.jpg" alt="Şeker portakalı">
+      <h4>Şeker portakalı</h4>
+    </div>
+
+    <div class="kitap-karti">
+      <img src="resimler/resim4.jpg" alt="Küçük Prens">
+      <h4>Küçük prens</h4>
+    </div>
+
+<div class="kitap-karti">
+      <img src="resimler/resim2.webp" alt="Melekler ve şeytanlar">
+      <h5>Melekler ve şeytanlar</h5>
+    </div>
+<div class="kitap-karti">
+      <img src="resimler/resim6.jpg" alt="Kuyucaklı yusuf">
+      <h5>Kuyucuklu yusuf</h5>
+    </div>
+<div class="kitap-karti">
+      <img src="resimler/resim7.jpg" alt="Kürk mantolu madonna">
+      <h5>Kürk mantolu madonna</h5>
+    </div>
+<div class="kitap-karti">
+      <img src="resimler/resim29.jpg" alt="Bir İdam Mahkumun Son Günü ">
+      <h5>Bir İdam Mahkumun Son Günü</h5>
+</div>
+<div class="kitap-karti">
+      <img src="resimler/resim30.jpg" alt="Martin Eden ">
+      <h5>Martin Eden</h5>
+    </div>
+
+</div>
+
+
+<h5> En Çok Okunan Kitaplar - Çok Satan Kitaplar</h5>
+
+
+<div class="kitaplar-container">
+    <div class="kitap-karti">
+      <img src="resimler/resim21.jpg" alt="Bülbül Kapanı">
+      <h4>Bülbül Kapanı</h4>
+    </div>
+
+    <div class="kitap-karti">
+      <img src="resimler/resim20.jpg" alt="Toprak Ana">
+      <h4>Toprak Ana</h4>
+    </div>
+
+<div class="kitap-karti">
+      <img src="resimler/resim19.jpg" alt="Visal">
+      <h5>Visal</h5>
+    </div>
+<div class="kitap-karti">
+      <img src="resimler/resim22.jpg" alt="Aslan , Cadı Ve Dolap">
+      <h5>Aslan , Cadı Ve Dolap</h5>
+    </div>
+<div class="kitap-karti">
+      <img src="resimler/resim23.jpg" alt="Yüzüklerin Efendisi">
+      <h5>Yüzüklerin Efendisi</h5>
+    </div>
+
+<div class="kitap-karti">
+      <img src="resimler/resim27.jpg" alt="Aşk Ve Gurur">
+      <h5>Yüzüklerin Efendisi</h5>
+    </div>
+
+<div class="kitap-karti">
+      <img src="resimler/resim28.jpg" alt="Gurur Ve Önyargı">
+      <h5>Yüzüklerin Efendisi</h5>
+    </div>
+
+</div>
+
+<p><h5>Kitap Listesi</h5></p>
+<table border ="1">
+   <tr>
+    <th>Kitap Adı</th>
+    <th>Yazar</th>
+    <th>Tür</th>
+    <th>Fiyat</th>
+  </tr>
+  <tr>
+    <td>Şeker Portakalı</td>
+    <td>José Mauro de Vasconcelos</td>
+    <td>Roman</td>
+    <td>45 TL</td>
+  </tr>
+  <tr>
+    <td>Küçük Prens</td>
+    <td>Antoine de Saint-Exupéry</td>
+    <td>Çocuk / Felsefe</td>
+    <td>30 TL</td>
+  </tr>
+  <tr>
+    <td>Kürk Mantolu Madonna</td>
+    <td>Sabahattin Ali</td>
+    <td>Roman</td>
+    <td>60 TL</td>
+  </tr>
+</table>
+<br></br>
+
+
+<form>
+    <fieldset>
+     <h3 style="color: darkblue;">Kişisel kitap seçimi</h3> 
+        <label for="KitapAdi">Kitap Adı:</label>
+        <input type="text" id="KitapAdi" name="KitapAdi"><br><br>
+
+        <label for="Yazar">Yazar:</label>
+        <input type="text" id="Yazar" name="Yazar"><br><br>
+
+        
+             
+        <label for="Tur">Tür:</label>
+        <select id="Tur" name="Tur">
+            <option>Roman</option>
+      <option>Bilim Kurgu</option>
+      <option>Çocuk</option>
+      <option>Macera</option>
+      <option>Korku</option>
+        </select><br><br>
+
+        <label for="ozet">Kısa Açıklama:</label><br>
+        <textarea id="ozet" ="ozet" rows="5" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sıfırla">
+    </fieldset>
+</form>
+
+
+
+</body>
+</html>
